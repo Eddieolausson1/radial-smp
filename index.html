@@ -1,0 +1,206 @@
+<head>
+  <link rel="icon" href="logo.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Radial SMP</title>
+</head>
+<div class="ui" id="ui">
+  <div hidden class="copyalert" id="copyalert">
+    <p>Text copied to clipboard.</p>
+  </div>
+  <div class="mfont" id="mfont">
+  <h2 class="title" id="title">Radial SMP</h2>
+    <p class="version">MC 1.20.4 PAPER</p>
+    <p class="description" id="description">PVP | Survival</p>
+  </div>
+  <span class="minecraft d-block d-md-inline-block"><span style="color: #00AA00">play.</span><span
+      style="color: #55FF55">radial</span><span style="color: #FFAA00">-smp</span><span
+      style="color: #FFFF55">.net</span></span>
+  <svg onclick="copy()" class="copy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+    <path
+      d="M208 0H332.1c12.7 0 24.9 5.1 33.9 14.1l67.9 67.9c9 9 14.1 21.2 14.1 33.9V336c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V48c0-26.5 21.5-48 48-48zM48 128h80v64H64V448H256V416h64v48c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V176c0-26.5 21.5-48 48-48z" />
+  </svg>
+  <br>
+  <button class="shop-button" id="shop-button" onclick="window.location.href = 'shop.html'">Our Shop</button>
+  <button class="abt-button" id="abt-button" onclick="window.location.href = 'abtus.html'">About Us</button>
+  <div class="font-credit" id="font-credit"><a onclick="fontcredits()" href="#" class="font-credits-btn">Show Credits</a></div>
+</div>
+<style>
+
+.shop-button {
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  font-family: Minecraft;
+  border: 3px solid black;
+  animation: sizedown;
+  animation-duration: 1s;
+}
+
+  .abt-button {
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    font-family: Minecraft;
+    border: 3px solid black;
+    animation: sizedown;
+    animation-duration: 1s;
+  }
+
+.abt-button:hover {
+  animation: sizeup;
+  animation-duration: 1s;
+  width: 105px;
+  height: 35px;
+}
+
+  .shop-button:hover {
+    animation: sizeup;
+    animation-duration: 1s;
+    width: 105px;
+    height: 35px;
+  }
+  
+  .font-credit {
+    position: relative;
+    top: 175px;
+    font-family: Minecraft;
+    font-size: 13px;
+  }
+
+  body {
+    background-image: url(https://wallpapers-clan.com/wp-content/uploads/2023/10/minecraft-grass-tree-desktop-wallpaper-preview.jpg);
+    background-repeat: none;
+    background-size: cover;
+  }
+
+  .ui {
+    text-align: center;
+    top: 40%;
+    position: relative;
+    color: white;
+  }
+  
+  .title {
+    font-size: 22px;
+    font-family: Minecraft;
+    margin-left: 10px;
+    animation: title;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  .description {
+    font-family: Minecraft;
+    font-size: 12px;
+    position: relative;
+    top: -10px;
+    animation: bounce;
+    animation-duration: 2s;
+  }
+
+  .version {
+    font-family: Minecraft;
+    font-size: 10px;
+    position: relative;
+    top: -10px;
+    animation: bounce;
+    animation-duration: 2s;
+  }
+  
+.mfont {
+  font-family: Minecraft;
+}
+  
+  .minecraft {
+    background-color: #000;
+    color: #AAA;
+    display: inline-block;
+    font-family: monospace;
+    padding: .5em;
+    white-space: pre;
+    overflow-x: auto;
+    border-radius: 5px;
+    position: relative;
+    top: -10px;
+  }
+
+  .ui {
+    text-align: center;
+  }
+
+  .copy-icon {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: -10px;
+    display: none;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 100%;
+    }
+
+    100% {
+      opacity: 0%;
+    }
+  }
+
+  .copyalert {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    width: 250px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Minecraft;
+    font-size: 15px;
+    display: none;
+  }
+
+  .copyalert p {
+    text-align: center;
+  }
+
+  @font-face {
+      font-family: 'Minecraft'; !important
+      src: url('mfont/MinecraftR/mfont.eot');
+      src: url('mfont/MinecraftR/mfont.eot?#iefix') format('embedded-opentype'),
+           url('mfont/MinecraftR/mfont.woff2') format('woff2'),
+           url('mfont/MinecraftR/mfont.woff') format('woff'),
+           url('mfont/MinecraftR/mfont.ttf') format('truetype'),
+           url('mfont/MinecraftR/mfont.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @keyframes sizeup {
+    0% {width: 100px; height: 30px;}
+    100% {width: 105px; height: 35px;}
+  }
+
+  @keyframes sizedown {
+    0% {width: 105px; height: 35px;}
+    100% {width: 100px; height: 30px;}
+  }
+
+  @keyframes title {
+    0% {font-size: 22px;}
+    50% {font-size: 23px;}
+    100% {font-size: 22px;}
+  }
+</style>
+<script>
+  function copy() {
+    var copyText = "play.radial-smp.net";
+    alert("Copied to clipboard!");
+    navigator.clipboard.writeText(copyText);
+  }
+
+  function fontcredits() {
+    let text = "Fonts made from <a href='http://www.onlinewebfonts.com'>Web Fonts</a> is licensed by CC BY 4.0 | NOT Affiliated With Minecraft OR Mojang AB.";
+    document.getElementById("font-credit").innerHTML = text;
+  }
+</script>

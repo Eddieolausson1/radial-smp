@@ -1,0 +1,80 @@
+<head>
+  <title>Radial SMP - About Us</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<div class="obj1">
+  <h2>About Us</h2>
+  <h4>We are a small Minecraft Server/Community that offers Survival And PVP, Please Donate if you can.</h4>
+  <button onclick="window.location.href = '/' ">Go Back</button>
+</div>
+<style>
+
+  .obj1 {
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    background-color: darkgray;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    border: 5px solid black;
+    animation: opac2;
+    animation-duration: 1s;
+  }
+
+  .obj1 h2 {
+    font-family: Minecraft;
+  }
+
+  .obj1 h4 {
+    font-family: Minecraft;
+  }
+
+.obj1 button {
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  font-family: Minecraft;
+  border: 3px solid black;
+  margin-top: 130px;
+}
+
+  .obj1:hover {
+    animation: opac;
+    animation-duration: 1s;
+    opacity: 80%;
+    width: 520px; height: 320px;
+  }
+  
+body {
+  background-image: url(https://wallpapercave.com/dwp2x/wp5961294.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+@font-face {
+    font-family: 'Minecraft'; !important
+    src: url('mfont/MinecraftR/mfont.eot');
+    src: url('mfont/MinecraftR/mfont.eot?#iefix') format('embedded-opentype'),
+         url('mfont/MinecraftR/mfont.woff2') format('woff2'),
+         url('mfont/MinecraftR/mfont.woff') format('woff'),
+         url('mfont/MinecraftR/mfont.ttf') format('truetype'),
+         url('mfont/MinecraftR/mfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  @keyframes opac {
+    0% {opacity: 100%; width: 500px; height: 300px;}
+    100% {opacity: 80%; width: 520px; height: 320px;}
+  }
+
+  @keyframes opac2 {
+    0% {opacity: 80%; width: 520px; height: 320px;}
+    100% {opacity: 100%; width: 500px; height: 300px;}
+  }
+</style>

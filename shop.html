@@ -1,0 +1,181 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Radial SMP</title>
+</head>
+<div class="ui" id="ui">
+<h2 class="title" id="title">Radial SMP - Shop</h2>
+</div>
+<div class="obj1" id="obj1">
+  <h2>VIP🌟</h2>
+  <p>2x Money On Kills</p>
+  <p>Get Access To Special Commands</p>
+  <p>Special Discord Rank</p>
+  <h3 class="price">$2 A Month</h3>
+  <button>Buy Now</button>
+</div>
+<div class="obj2" id="obj2">
+  <h2>VIP+🌟</h2>
+  <p>4x Money On Kills</p>
+  <p>Get Access To Special Commands</p>
+  <p>Special Discord Rank</p>
+  <h3 class="price">$5 A Month</h3>
+  <button>Buy Now</button>
+</div>
+<button class="gback-btn" onclick="window.location.href = '/' ">Go Back</button>
+<style>
+
+  .price {
+    font-family: Minecraft;
+  }
+  
+.obj1 {
+  color: white;
+  text-align: center;
+  position: absolute;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  background-color: darkgray;
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  border: 5px solid black;
+  animation: opac2;
+  animation-duration: 1s;
+}
+
+  .obj1 p {
+   font-family: Minecraft;
+  }
+
+  .obj1 h2 {
+   font-family: Minecraft;
+  }
+
+  .obj1 button {
+    font-family: Minecraft;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+  }
+
+  .obj2 {
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    background-color: darkgray;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    border: 5px solid black;
+    animation: opac2;
+    animation-duration: 1s;
+  }
+
+  .obj2:hover {
+    opacity: 90%;
+    width: 220px;
+    height: 320px;
+    animation: opac;
+    animation-duration: 1s;
+  }
+
+  .obj1:hover {
+    opacity: 90%;
+    width: 220px;
+    height: 320px;
+    animation: opac;
+    animation-duration: 1s;
+  }
+
+    .obj2 h2 {
+     font-family: Minecraft;
+    }
+
+  .obj2 p {
+   font-family: Minecraft;
+  }
+
+  .obj2 button {
+   font-family: Minecraft;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+  }
+
+  .gback-btn {
+    font-family: Minecraft;
+    border-radius: 5px;
+    width: 105px;
+    height: 35px;
+    position: absolute;
+    left: 45%;
+    top: 90%;
+    animation: sizedown;
+    animation-duration: 1s;
+  }
+
+  .gback-btn:hover {
+    width: 105px;
+    height: 35px;
+    animation: sizeup;
+    animation-duration: 1s;
+  }
+  
+  @keyframes sizeup {
+    0% {width: 100px; height: 25px;}
+    100% {width: 105px; height: 35px;}
+  }
+
+  @keyframes sizedown {
+    0% {width: 105px; height: 35px;}
+    100% {width: 100px; height: 25px;}
+  }
+  
+  .ui {
+    color: white;
+    top: 30%;
+    position: relative;
+    text-align: center;
+  }
+
+  .title {
+    text-align: center;
+    font-family: Minecraft, Arial;
+    font-size: 30px;
+    top: -50px;
+    position: relative;
+  }
+
+@font-face {
+    font-family: 'Minecraft'; !important
+    src: url('mfont/MinecraftR/mfont.eot');
+    src: url('mfont/MinecraftR/mfont.eot?#iefix') format('embedded-opentype'),
+         url('mfont/MinecraftR/mfont.woff2') format('woff2'),
+         url('mfont/MinecraftR/mfont.woff') format('woff'),
+         url('mfont/MinecraftR/mfont.ttf') format('truetype'),
+         url('mfont/MinecraftR/mfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+  body {
+    background-image: url(https://wallpapers-clan.com/wp-content/uploads/2023/11/cool-minecraft-pixel-desktop-wallpaper-preview.jpg);
+    background-repeat: none;
+    background-size: cover;
+  }
+
+  @keyframes opac {
+    0% {opacity: 100%; width: 200px; height: 300px;}
+    100% {opacity: 90%; width: 220px; height: 320px;}
+  }
+
+  @keyframes opac2 {
+    0% {opacity: 90%; width: 220px; height: 320px;}
+    100% {opacity: 100%; width: 200px; height: 300px;}
+  }
+</style>

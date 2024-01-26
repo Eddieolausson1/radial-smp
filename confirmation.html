@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <link rel="icon" href="logo.png" type="image/png">
+  <title>Radial SMP - Confirmation</title>
+</head>
+<img class="logo" src="/Radial SMP/logo.png">
+<h3>Confirmation Code:</h3>
+<h2 id="code" class="code">Click the Button Below to Get the Code.</h2>
+<button id="gencode" class="gencode" onclick="generateCode()">Get Code</button>
+<style>
+
+  .logo {
+    width: 500px;
+    height: 100px;
+  }
+  .gencode {
+    width: 300px;
+    height: 200px;
+    background-color: forestgreen;
+    border-radius: 10px;
+    border: 5px solid lightgreen;
+    font-size: 40px;
+    font-family: Minecraft;
+    color: white;
+  }
+
+  @font-face {
+      font-family: 'Minecraft'; !important
+      src: url('mfont/MinecraftR/mfont.eot');
+      src: url('mfont/MinecraftR/mfont.eot?#iefix') format('embedded-opentype'),
+           url('mfont/MinecraftR/mfont.woff2') format('woff2'),
+           url('mfont/MinecraftR/mfont.woff') format('woff'),
+           url('mfont/MinecraftR/mfont.ttf') format('truetype'),
+           url('mfont/MinecraftR/mfont.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+</style>
+<script>
+ function generateCode() {
+   const gencode = document.getElementById("gencode");
+    let randomNumber = Math.floor(Math.random() * 9999999999);
+    console.log(randomNumber);
+   document.getElementById("code").innerHTML = randomNumber;
+    gencode.remove();
+  }
+</script>
